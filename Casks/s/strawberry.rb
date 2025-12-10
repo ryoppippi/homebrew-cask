@@ -1,6 +1,6 @@
 cask "strawberry" do
-  version "0.0.72"
-  sha256 "9fb187f467451eaa12868effc9e7307badba7b2b6207cd1700bcd72097b983e9"
+  version "0.0.73"
+  sha256 "26ab31f39775527a4088960950fc7f1bc5d1ec0d024082f1e39ee4149be7d87b"
 
   url "https://strawberrybucket.xyz/strawberry-#{version}.dmg",
       verified: "strawberrybucket.xyz/"
@@ -12,6 +12,8 @@ cask "strawberry" do
     url "https://strawberrybucket.xyz/latest-mac.yml"
     strategy :electron_builder
   end
+
+  disable! date: "2026-09-01", because: :fails_gatekeeper_check
 
   auto_updates true
   depends_on macos: ">= :big_sur"
