@@ -4,7 +4,7 @@ cask "bettercapture" do
 
   url "https://github.com/jsattler/BetterCapture/releases/download/v#{version}/BetterCapture-#{version}-arm64.dmg"
   name "BetterCapture"
-  desc "Free and open source screen recorder for the rest of us"
+  desc "Free and open source screen recorder"
   homepage "https://github.com/jsattler/BetterCapture"
 
   livecheck do
