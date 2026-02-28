@@ -6,7 +6,11 @@ cask "bettercapture" do
   name "BetterCapture"
   desc "Free and open source screen recorder"
   homepage "https://github.com/jsattler/BetterCapture"
-
+  url "https://github.com/jsattler/BetterCapture/releases/download/v#{version}/BetterCapture-#{version}-arm64.dmg",
+      verified: "github.com/jsattler/BetterCapture/"
+  name "BetterCapture"
+  desc "Free and open source screen recorder for the rest of us"
+  homepage "https://bettercapture.app/"
   livecheck do
     url :url
     strategy :github_latest
