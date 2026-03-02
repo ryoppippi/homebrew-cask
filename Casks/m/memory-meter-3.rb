@@ -3,7 +3,7 @@ cask "memory-meter-3" do
   version "1.0.81"
   sha256 "b8113adf1b65656eb933e76cda601ac25f1ada6208ca49b641e9da266857850d"
 
-url "https://fiplab.com/updates/memorymeter3/Memory-Meter-3-#{version}.zip"
+  url "https://fiplab.com/updates/memorymeter3/Memory-Meter-3-#{version}.zip"
   name "Memory Meter 3"
   desc "Memory cleaning utility"
   homepage "https://fiplab.com/apps/memory-clean-3-for-mac"
@@ -14,6 +14,7 @@ url "https://fiplab.com/updates/memorymeter3/Memory-Meter-3-#{version}.zip"
   end
 
   auto_updates true
+  depends_on macos: ">= :big_sur"
 
   app "Memory Meter 3.app"
 
